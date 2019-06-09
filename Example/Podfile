@@ -1,0 +1,15 @@
+#use_frameworks!
+inhibit_all_warnings!
+
+platform :ios, '8.0'
+
+target 'ATPayHandler_Example' do
+  pod 'ATPayHandler', :path => '../'
+
+  pod 'ATToast'
+  
+  target 'ATPayHandler_Tests' do
+    inherit! :search_paths
+  end
+  
+end
